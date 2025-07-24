@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alp's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar-container">
+            <div class="logo">
+                <a href="#home">Şahin Alp Akosman</a> </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects-tab-section">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/sahin-alp-akosman/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/sahinalp/" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+        </div>
+    </header>
+
+    <div class="container" id="home"> <h1>Hi! I'm Alp,<span id="dynamic-role" class="dynamic-text"></span></h1>
+        <span class="word" style="display: none;">Data Scientist</span>
+        <span class="word" style="display: none;">Computer Engineer</span>
+    </div>
+
+    <div class="skills-section" id="skills">
+    <h1>Skills</h1>
+    <h2>Languages &amp; Frameworks/Tools</h2>
+        <div class="all-skills-list-wrapper">
+            <div class="all-skills-list" id="unified-skills-list">
+                <div class="skill-item">
+                    <img src="img/python.png" alt="Python">
+                    <span>Python</span>
+                </div>
+                <div class="skill-item">
+                    <img src="img/Matlab.png" alt="Matlab">
+                    <span>Matlab</span>
+                </div>
+                <div class="skill-item">
+                    <img src="img/sql.png" alt="SQL">
+                    <span>SQL</span>
+                </div>
+                <div class="skill-item">
+                    <img src="img/machine_learning.png" alt="Machine Learning">
+                    <span>Machine Learning</span>
+                </div>
+                <div class="skill-item">
+                    <img src="img/deep_learning.png" alt="Deep Learning">
+                    <span>Deep Learning</span>
+                </div>
+                <div class="skill-item">
+                    <img src="img/computer_vision.png" alt="Computer Vision">
+                    <span>Computer Vision</span>
+                </div>
+                <div class="skill-item">
+                    <img src="img/html.png" alt="HTML">
+                    <span>HTML/CSS</span>
+                </div>
+                <div class="skill-item">
+                    <img src="img/docker.png" alt="Docker">
+                    <span>Docker</span>
+                </div>
+                <div class="skill-item">
+                    <img src="img/aws.png" alt="AWS">
+                    <span>AWS</span>
+                </div>
+                <div class="skill-item">
+                    <img src="img/git.png" alt="Git">
+                    <span>Git</span>
+                </div>
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button id="slide-left">&lt;</button>
+            <button id="slide-right">&gt;</button>
+        </div>
+    </div>
+
+    <div class="tabs-container" id="projects-tab-section"> <div class="tabs">
+            <button class="tab-button active" data-tab="projects">Projects</button>
+            <button class="tab-button" data-tab="education">Education</button>
+            <button class="tab-button" data-tab="experience">Experience</button>
+        </div>
+
+        <div id="projects" class="tab-content active">
+            <section class="projects">
+                <div class="project-grid">
+                    <div class="project-card" data-url="https://github.com/sahinalp/Diabetes-Prediction-with-Flask-and-AWS-Deployment">
+                        <h2>Diabetes Prediction with Flask and AWS</h2>
+                        <div class="project-overlay">
+                        <h3>Diabetes Prediction with Flask and AWS</h3>
+                        <p>Predicts diabetes using the Pima Indians dataset. Built with Flask, Docker and deployed on AWS.</p>
+                    </div>
+                    </div>
+                    <div class="project-card" data-url="https://github.com/sahinalp/MNIST-Digit-Recognizer">
+                        <h2>MNIST Digit Recognizer</h2>
+                        <div class="project-overlay">
+                        <h3>MNIST Digit Recognizer</h3>
+                        <p>CNN-based digit classifier trained on the MNIST dataset using Keras and TensorFlow.</p>
+                    </div>
+                    </div>
+                    <div class="project-card" data-url="https://github.com/sahinalp/Music-Recommendation-System">
+                        <h2>Music Recommendation System</h2>
+                        <div class="project-overlay">
+                        <h3>Music Recommendation System</h3>
+                        <p>A personalized system that recommends songs based on user preferences.</p>
+                    </div>
+                    </div>
+                    <div class="project-card" data-url="https://github.com/sahinalp/Mask-Detection">
+                        <h2>Mask Detection</h2>
+                        <div class="project-overlay">
+                        <h3>Mask Detection</h3>
+                        <p>Object detection with SSD MobileNet V2 to classify masked and unmasked faces.</p>
+                    </div>
+                    </div>
+                    <div class="project-card" data-url="https://github.com/sahinalp/Natural-Language-Processing-with-Disaster-Tweets">
+                        <h2>Disaster Tweet Classification</h2>
+                        <div class="project-overlay">
+                        <h3>Disaster Tweet Classification</h3>
+                        <p>Deep learning-based NLP model to classify tweets related to real disasters.</p>
+                    </div>
+                    </div>
+                    <div class="project-card" data-url="https://github.com/sahinalp/LLM-Based-Retrieval-Augmented-Generation-System">
+                        <h2>LLM-Based RAG Chatbot</h2>
+                        <div class="project-overlay">
+                        <h3>LLM-Based RAG Chatbot</h3>
+                        <p>Retrieval-Augmented Generation system using LLaMA-7B to answer queries from PDF documents.</p>
+                    </div>
+                    </div>
+                    <div class="project-card" data-url="https://github.com/sahinalp/HotelReservation">
+                        <h2>Hotel Reservation System</h2>
+                        <div class="project-overlay">
+                        <h3>Hotel Reservation System</h3>
+                        <p>Java-based backend system with PostgreSQL for managing hotel reservations and user profiles.</p>
+                    </div>
+                      </div>
+                    <div class="project-card" data-url="https://github.com/sahinalp/Spaceship-Titanic-Kaggle-Competition">
+                        <h2>Spaceship Titanic Kaggle Competition</h2>
+                        <div class="project-overlay">
+                        <h3>Spaceship Titanic Kaggle Competition</h3>
+                        <p>Predicting passenger survival on a fictitious intergalactic cruise using various machine learning models.</p>
+                        </div>
+                      </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="education" class="tab-content">
+            <section class="timeline-section">
+                <h2>Education History</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2022 - 2024</div>
+                        <div class="timeline-content">
+                            <h3>Master of Science in Computer Engineering</h3>
+                            <p class="corp">Ege University</p>
+                            <p class="city">Izmir, Turkey</p>
+                            <ul>
+                                <li>I completed a deep learning research study for my thesis that detects diseases in medical images. I used MATLAB during my study.</li>
+                                <li>I created a machine learning application that recommends music based on the user's choices. I used Python and scikit-learn, pandas, NumPy libraries during this project.</li>
+                                <li>I developed a deep learning application that detects people’s faces and people wearing masks and those who do not. I used Python and TensorFlow, pandas, NumPy libraries during this project.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2016 - 2021</div>
+                        <div class="timeline-content">
+                            <h3>Bachelor of Science in Electrical and Electronics Engineering</h3>
+                            <p class="corp">Izmir Katip Celebi University</p>
+                            <p class="city">Izmir, Turkey</p>
+                            <ul>
+                                <li>For my graduation project, I carried out a deep learning study that successfully detected and classified cracks even though marbles had patterned and complex surfaces. I used MATLAB at this project. With this work, I won a TUBITAK 2209-B Industry Oriented Research Project Support scholarship. I also made it to the finals of the TUBITAK 2242 competition.</li>
+                                <li>I actively participated in many communities during my education.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="experience" class="tab-content">
+            <section class="timeline-section">
+                <h2>Work Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">December, 2023 - February, 2024</div>
+                        <div class="timeline-content">
+                            <h3>Data Analyst Intern</h3>
+                            <p class="corp">Tüpraş</p>
+                            <p class="city">Istanbul, Turkey</p>
+                            <h4>Time Series Forecasting Project</h4>
+                            <p><b>Project Involvement:</b> Developed an ensemble machine learning model for time series forecasting.Tools and Technologies: Utilized Python, scikit-learn, pandas, and NumPy libraries.</p>
+                            <p><b>Key Responsibilities:</b></p>
+                            <ul>
+                                <li>Conducted feature engineering and feature selection.</li>
+                                <li>Built and refined machine learning models.</li>
+                                <li>Tuned model parameters to enhance performance.</li>
+                            </ul>
+                            <p><b>Skills Gained:</b> Gained proficiency in the end-to-end data analysis and model development process within real-world applications.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">July, 2021 - September, 2021</div>
+                        <div class="timeline-content">
+                            <h3>Research & Development Software Engineer, Intern</h3>
+                            <p class="corp">AdresGezgini</p>
+                            <p class="city">Izmir, Turkey</p>
+                            <h4>Audio Classification and Dataset Development</h4>
+                            <p><b>Dataset Development:</b> Actively contributed to the creation and annotation of a comprehensive sound dataset.</p>
+                            <p><b>Audio Classification:</b> Applied deep learning techniques for audio classification tasks.</p>
+                            <p><b>Tools and Technologies:</b> Used Python, scikit-learn, TensorFlow, pandas, and NumPy libraries.</p>
+                            <p><b>Key Responsibilities:</b></p>
+                            <ul>
+                                <li>Demonstrated expertise in dataset creation</li>
+                                <li>Audio classification using deep learning techniques.</li>
+                                <li>Collaborated with team members to document and share knowledge through Medium blog posts.</li>
+                            </ul>
+                              <p><b>Skills Gained:</b> Enhanced skills in deep learning for audio classification and in effectively communicating technical knowledge.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <footer id="contact"> <p>Copyright 2025. All Rights Reserved.</p>
+        <div class="social-links-footer">
+            <a href="https://www.linkedin.com/in/sahin-alp-akosman/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
+            <a href="https://github.com/sahinalp/" target="_blank" aria-label="GitHub"><i class="fab fa-github fa-2x"></i></a>
+            </div>
+    </footer>
+
+  <script src="static/header.js"></script>
+  <script src="static/skills.js"></script>
+  <script src="static/tab.js"></script>
+  <script src="static/cards.js"></script>
+  <script src="static/navigation.js"></script>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
